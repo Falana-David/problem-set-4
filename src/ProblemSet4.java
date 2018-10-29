@@ -21,7 +21,8 @@
 public class ProblemSet4 {
 	
 	public static void main(String[] args) {
-		
+		ProblemSet4 ps = new ProblemSet4();
+		ps.surroundme("XYZ", "AABB");
 	}
 	
 	/**
@@ -34,11 +35,46 @@ public class ProblemSet4 {
 	 * 
 	 * @param out - a 4-character String of the format AABB
 	 * @param in - a 3-character String of the format XYZ
-	 * 
 	 * @return a String constructed from @in and @out of the format AAXYZBB
 	 */
+	public String surroundme(String in, String out)
+	{
 	
-	// your method signature here
+		char z;
+		z = out.charAt(0);
+		char x;
+		x = out.charAt(1);
+		char a;
+		a = in.charAt(0);
+		char b;
+		b = in.charAt(1); 
+		char c;
+		c = in.charAt(2); 
+		char m;
+		m = out.charAt(2); 
+		char n;
+		n = out.charAt(3);
+			
+		char[] charArray = {z,x,a,b,c,m,n};
+		String str = String.valueOf(charArray);
+		System.out.print(str);
+		
+		char o;
+		o = out.charAt(3);
+		
+		char q;
+		q = out.charAt(4);
+		
+		if  (o == out.charAt(3))
+		{
+			return null;
+		}
+		else if (q = out.charAt(4))
+		{
+			return null;
+		}
+		
+	}
 	
 	/**
 	 * @endsMeet is a public method that accepts a String and an integer as input, and
