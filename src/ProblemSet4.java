@@ -35,7 +35,6 @@ public class ProblemSet4 {
 	 * 
 	 * @param out - a 4-character String of the format AABB
 	 * @param in - a 3-character String of the format XYZ
-	 * @return a String constructed from @in and @out of the format AAXYZBB
 	 */
 	public String surroundme(String in, String out)
 	{
@@ -60,19 +59,23 @@ public class ProblemSet4 {
 		System.out.print(str);
 		
 		char o;
-		o = out.charAt(3);
-		
 		char q;
-		q = out.charAt(4);
 		
-		if  (o == out.charAt(3))
+		
+	
+		boolean isMe = true;
+		
+		if (o == out.charAt(4)) {
+			isMe = false;
+		}
+		
+		
+		if (q == in.charAt(3))
+		if(isMe)
 		{
 			return null;
 		}
-		else if (q = out.charAt(4))
-		{
-			return null;
-		}
+		
 		
 	}
 	
