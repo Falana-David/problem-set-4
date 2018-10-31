@@ -23,6 +23,7 @@ public class ProblemSet4 {
 	public static void main(String[] args) {
 		ProblemSet4 ps = new ProblemSet4();
 		ps.surroundme("XYZ", "AABB");
+		ps.endsMeet("qwerty", 2);
 	}
 	
 	/**
@@ -36,7 +37,7 @@ public class ProblemSet4 {
 	 * @param out - a 4-character String of the format AABB
 	 * @param in - a 3-character String of the format XYZ
 	 */
-	public String surroundme(String in, String out)
+	public void surroundme(String in, String out)
 	{
 	
 		char z;
@@ -61,20 +62,7 @@ public class ProblemSet4 {
 		char o;
 		char q;
 		
-		
-	
 		boolean isMe = true;
-		
-		if (o == out.charAt(4)) {
-			isMe = false;
-		}
-		
-		
-		if (q == in.charAt(3))
-		if(isMe)
-		{
-			return null;
-		}
 		
 		
 	}
@@ -89,12 +77,23 @@ public class ProblemSet4 {
 	 * 
 	 * @param str - a String whose length falls in the range [1, 10]
 	 * @param n - an integer no greater than the length of @str
-	 * 
-	 * @return a String constructed from the first @n and last @n characters of @str
 	 */
 	
 	// your method signature here
-	
+	public void endsMeet(String str, int n)
+	{	
+		String supper = str;
+		char y = str.charAt(str.length() - 1);
+		System.out.println(x);
+		if () {
+			
+		}
+		else if (str == null)
+		{
+			return;
+		}
+				
+	}
 	/**
 	 * @middleMan is a public method that accepts a single String as input, and
 	 * returns a single String as output.
