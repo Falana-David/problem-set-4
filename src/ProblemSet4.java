@@ -24,6 +24,8 @@ public class ProblemSet4 {
 		ProblemSet4 ps = new ProblemSet4();
 		ps.surroundme("XYZ", "AABB");
 		ps.endsMeet("qwerty", 2);
+		ps.middleMan("programming");
+		ps.doublevision("qwerty");
 	}
 	
 	/**
@@ -57,7 +59,7 @@ public class ProblemSet4 {
 			
 		char[] charArray = {z,x,a,b,c,m,n};
 		String str = String.valueOf(charArray);
-		System.out.print(str);
+		System.out.println(str);
 		
 		char o;
 		char q;
@@ -80,15 +82,11 @@ public class ProblemSet4 {
 	 */
 	
 	// your method signature here
-	public void endsMeet(String str, int n)
+	public void endsMeet(String string, int n)
 	{	
-		String supper = str;
-		char y = str.charAt(str.length() - 1);
-		System.out.println(x);
-		if () {
-			
-		}
-		else if (str == null)
+		String supper = string;
+		char y = string.charAt(string.length() - 1);
+		 if (string == null)
 		{
 			return;
 		}
@@ -103,11 +101,48 @@ public class ProblemSet4 {
 	 * specifications are not met.
 	 * 
 	 * @param str - a String whose length is odd
+	 * @return 
 	 * 
 	 * @return a 3-character String constructed from the middle 3 characters of @str
 	 */
 	
 	// your method signature here
+	public String middleMan(String str)
+	{	
+		
+		int position1 = (str.length() / 2) - 1;
+		int position2 = position1 + 1;
+		int position3 = position1 + 2;
+		
+		char o;
+		o = str.charAt(position1); 
+		
+		char h;
+		h = str.charAt(position2);
+		
+		char v;
+		v = str.charAt(position3); 
+		
+		char[] charArray = {o,h,v};
+		String thing = String.valueOf(charArray);
+		System.out.println(thing);
+		
+		if(str == null)
+		{
+			return null;
+		}
+		else if (str.length() % 2 == 0)
+		{
+			return null;
+		}
+		else if (str.length() % 2 != 0)
+		{
+			return str;
+		}
+		else {
+			return null;
+		}
+	}
 	
 	/**
 	 * @doubleVision is a public method that accepts a single String as input, and
@@ -123,7 +158,22 @@ public class ProblemSet4 {
 	 */
 	
 	// your method signature here
-	
+	public String doublevision(String str)
+	{
+		int m = str.length();
+		for (int o = 0; o <= m; o++)
+		{
+			System.out.println(str.charAt(0));
+			str.charAt(m + 1);
+			if (m >= 1) {
+				return str;
+			}
+			else {
+				return null;
+			}
+		}
+		return str;
+	}
 	/**
 	 * @centered is a public method that accepts a single String as input, and
 	 * returns a boolean as output.
